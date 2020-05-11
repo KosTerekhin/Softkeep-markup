@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.owl-dot {
+    &:focus {
+        outline: 0;
+    }
+}
+
+.owl-nav {
+    > button {
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.none-425 {
+    @media screen and (max-width: 425px) {
+        display: none !important;
+    }
+}
+
+.block-425 {
+    @media screen and (min-width: 426px) {
+        display: none !important;
+    }
+}

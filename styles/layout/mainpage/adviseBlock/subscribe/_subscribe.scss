@@ -1,0 +1,30 @@
+.subscribe-block {
+    padding: 0 !important;
+    padding-top: 7.7% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: center !important;
+
+    > h2 {
+        text-align: center !important;
+        margin-bottom: 7% !important;
+    }
+
+    > p {
+        max-width: 80%;
+        text-align: center !important;
+        font-family: var(--poppins);
+        font-size: 14px;
+
+        margin-bottom: 9.5% !important;
+    }
+
+    @include width768 {
+        > h2,
+        p,
+        div {
+            margin-bottom: 5% !important;
+        }
+    }
+}

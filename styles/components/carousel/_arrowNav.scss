@@ -1,0 +1,79 @@
+.carousel-custom-nav {
+    .owl-nav {
+        margin: 0 !important;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+
+        transform: translateY(50%);
+        .owl-prev {
+            background-image: url(/styles/images/001-right-arrow.svg) !important;
+            transform: rotate(-180deg);
+        }
+
+        .owl-next {
+            background-image: url(/styles/images/001-right-arrow.svg) !important;
+        }
+
+        button {
+            margin: 0 !important;
+            background-color: transparent !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            border-radius: 0 !important;
+            width: 35px;
+            height: 35px;
+
+            @include width425 {
+                width: 30px;
+                height: 30px;
+            }
+
+            &:hover {
+                background-color: transparent !important;
+            }
+
+            &:focus {
+                outline: 2px auto #000000 !important;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.carousel-arrows-inside {
+    .owl-nav {
+        width: 97%;
+        right: 1.5%;
+        bottom: 50%;
+
+        @include width425 {
+            width: 100%;
+            right: 0%;
+        }
+    }
+}
+
+.carousel-arrows-outside {
+    .owl-nav {
+        width: 103%;
+        right: -1.5%;
+        bottom: 50%;
+    }
+}
+
+.carousel-arrows-double {
+    .owl-nav {
+        width: 107%;
+        right: -3%;
+        bottom: 54.5%;
+    }
+}

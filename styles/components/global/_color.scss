@@ -1,0 +1,37 @@
+.bg-color-dark {
+    background-color: var(--main-black);
+
+    a,
+    h2,
+    h1,
+    h3,
+    h4,
+    p {
+        color: var(--main-white);
+    }
+}
+
+.bg-color-green {
+    background-color: var(--header-green);
+
+    a,
+    h2,
+    h1,
+    h3,
+    h4,
+    p {
+        color: var(--main-white);
+    }
+}
+
+.bg-color-gray {
+    background-color: var(--top-border-light-gray);
+    a,
+    h2,
+    h1,
+    h3,
+    h4,
+    p {
+        color: var(--main-black);
+    }
+}

@@ -1,0 +1,16 @@
+header {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    height: rem(80px);
+    background-color: var(--header-bg);
+    @include width1024{
+        flex-direction: column;
+        height: rem(160px);
+    }
+}
+
+@import './left/left';
+@import './right/right';

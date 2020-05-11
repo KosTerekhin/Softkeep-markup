@@ -1,0 +1,61 @@
+// <div class="media-single-row">
+// <a class="media-element clear-link" href="/">
+//     <span>
+//         <img src="/styles/images/element.png" alt="media-img">
+//     </span>
+//     <div>
+//         <h5>Media Player Classic Home</h5>
+//         <p>Сканируй, обезвреживай, и удаляй с компьютера вредоносное ПО</p>
+//     </div>
+//     </a>
+// </div>
+
+.media-element {
+    max-width: 220px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--main-white);
+
+    padding-bottom: 29px;
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    > span {
+        max-width: 55%;
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 9px;
+
+        > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    > div {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > h5 {
+            font-family: var(--poppins);
+            font-weight: 400;
+            font-size: 16.7px;
+            text-align: center;
+        }
+
+        > p {
+            font-family: var(--myriad);
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            text-align: left;
+        }
+    }
+}

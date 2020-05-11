@@ -1,0 +1,13 @@
+@import "./utilities/reset";
+@import "./utilities/fonts";
+@import "./utilities/functions";
+@import "./utilities/colors";
+@import "./utilities/mixins";
+@import "./components/components";
+
+@import "./layout/header/header";
+@import "./layout/mainpage/center/center";
+@import "./layout/mainpage/bottom/bottom";
+@import "./layout/mainpage/adviseBlock/advise";
+
+@import "./layout/footer/footer";

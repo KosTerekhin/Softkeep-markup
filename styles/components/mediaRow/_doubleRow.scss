@@ -1,0 +1,8 @@
+.media-double-row {
+    display: flex;
+    flex-direction: column;
+
+    > a:first-of-type {
+        margin-bottom: 20px;
+    }
+}

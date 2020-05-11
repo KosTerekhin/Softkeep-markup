@@ -1,0 +1,39 @@
+// BUTTON COLORS
+.green-button {
+    color: var(--main-white);
+    background-color: var(--header-green);
+}
+
+.black-button {
+    color: var(--main-white);
+    background-color: var(--text-main-dark);
+
+    p {
+        font-family: var(--myriad);
+        font-size: 400;
+    }
+
+    &:hover {
+        color: var(--header-green) !important;
+    }
+}
+
+.white-button {
+    color: var(--text-main-dark);
+    background-color: var(--main-white);
+
+    > p {
+        font-family: var(--poppins);
+        font-weight: 600;
+    }
+
+    &:hover {
+        color: var(--header-green) !important;
+    }
+}
+
+.transperant-button {
+    color: var(--text-main-gray);
+    background-color: transparent;
+    text-transform: capitalize !important;
+}

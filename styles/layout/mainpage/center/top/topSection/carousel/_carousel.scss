@@ -1,0 +1,64 @@
+.main--carousel {
+    width: 67.5%;
+
+    @include width1024 {
+        width: 95%;
+    }
+}
+
+.main-carousel-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-left: 8.5%;
+
+    @include width1024 {
+        padding: 82px 0 88px 8.5%;
+    }
+
+    > span {
+        width: 58px;
+        height: 2px;
+        background-color: var(--header-green);
+
+        margin: 10px 0;
+    }
+
+    > h2 {
+        font-family: var(--poppins);
+        font-size: 55px;
+        font-weight: 100;
+    }
+
+    > h1 {
+        font-size: 63px;
+        text-align: left;
+        white-space: wrap;
+
+        @include width425 {
+            font-size: 41px;
+        }
+    }
+
+    &:after {
+        content: "";
+        background: url(/styles/images/photo-1486312338219-ce68d2c6f44d.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+.center-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 106px;
+
+    @include width1024 {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 20px;
+    }
+}
+
+@import "./carousel/carousel";
+@import "./top5/top5";

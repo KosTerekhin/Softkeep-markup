@@ -1,0 +1,20 @@
+* {
+    --main-white: rgb(255, 255, 255);
+    --main-black: rgb(0, 0, 0);
+    --text-main-dark: rgb(40, 40, 40);
+    --text-main-gray: rgb(94, 94, 94);
+    --logo-gray: rgb(77, 77, 77);
+    --header-bg: rgb(215, 215, 215);
+    --body-bg-gray: rgb(242, 242, 242);
+
+    --top-border-light-gray: rgb(229, 229, 229);
+
+    --header-green: rgb(122, 197, 138);
+    --button-black: rgb(38, 38, 38);
+
+    --footer-text-gray: rgb(107, 107, 107);
+
+    // SVG COLORS
+    --svg-white-color: invert(100%) sepia(0%) saturate(0%) hue-rotate(263deg) brightness(103%) contrast(105%);
+    --svg-black-color: invert(0%) sepia(92%) saturate(21%) hue-rotate(55deg) brightness(93%) contrast(100%);
+}

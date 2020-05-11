@@ -1,0 +1,30 @@
+.footer--right {
+    width: 25%;
+
+    padding-top: 3.7%;
+    display: flex;
+    justify-content: space-between;
+
+    @include width1024 {
+        width: 35%;
+    }
+
+    @include width425 {
+        margin: auto;
+        width: 60%;
+    }
+
+    h5 {
+        color: var(--top-border-light-gray);
+        margin-bottom: 27px;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+
+        &:nth-of-type(2) {
+            margin-right: 9%;
+        }
+    }
+}

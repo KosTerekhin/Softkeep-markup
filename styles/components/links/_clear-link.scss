@@ -1,0 +1,12 @@
+.clear-link {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: var(--text-main-dark);
+
+    &:hover{
+        color: var(--text-main-dark);
+        text-decoration: none;
+    }
+}

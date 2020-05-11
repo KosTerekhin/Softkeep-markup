@@ -1,0 +1,15 @@
+.max-height {
+    height: 100%;
+    > .owl-stage-outer {
+        height: 100%;
+        > .owl-stage {
+            height: 100%;
+            > .owl-item {
+                height: 100%;
+                > div {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@mixin width1920 {
+    @media only screen and (max-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin width1800 {
+    @media only screen and (max-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin width1440 {
+    @media only screen and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin width1024 {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin width768 {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin width425 {
+    @media only screen and (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin width375 {
+    @media only screen and (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin width320 {
+    @media only screen and (max-width: 320px) {
+        @content;
+    }
+}

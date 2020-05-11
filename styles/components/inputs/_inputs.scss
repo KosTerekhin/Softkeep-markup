@@ -1,0 +1,77 @@
+.input-group {
+    > input {
+        background-color: var(--main-white);
+        color: var(--text-main-gray);
+
+        border-radius: 27px !important;
+        border: 1px solid var(--header-green);
+        outline: none;
+        width: 100%;
+        height: 100%;
+
+        padding-right: 115px;
+
+        @include width425 {
+            padding-right: 50px;
+        }
+
+        &:focus {
+            z-index: 0 !important;
+            border-color: var(--header-green) !important;
+            box-shadow: none !important;
+        }
+    }
+}
+
+.input-search {
+    width: 45%;
+    height: 65%;
+    margin-right: 15px;
+
+    position: relative;
+
+    @include width1440 {
+        width: 60%;
+    }
+
+    @include width425 {
+        margin-right: 5px;
+    }
+
+    > div {
+        position: absolute;
+        right: 2.5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.input-subscribe {
+    width: 73%;
+    height: 53px;
+
+    position: relative;
+
+    @include width1024 {
+        width: 90%;
+    }
+
+    > input {
+        font-family: var(--myriad);
+        font-weight: 500;
+        font-size: 12px;
+
+        padding-right: 126px;
+    }
+
+    > div {
+        position: absolute;
+        right: 22.5%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include width375 {
+            right: 27.5%;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.header-right {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    width: 43%;
+
+    @include width1024{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@import './search/search';
+@import './language/language';

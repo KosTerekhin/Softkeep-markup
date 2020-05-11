@@ -1,0 +1,61 @@
+#humburger-menu-icon {
+    background-color: var(--header-green);
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    padding: 16px 14px;
+
+    position: absolute;
+    top: 18px;
+    left: 28px;
+
+    @include width425 {
+        top: 14px;
+        left: 4px;
+    }
+
+    > i {
+        filter: var(--svg-white-color);
+    }
+
+    &:hover {
+        > i {
+            filter: var(--svg-black-color);
+        }
+    }
+}
+
+.header-sidemenu {
+    background-color: var(--main-white);
+
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    // width: 309px;
+    height: 99%;
+    top: 0%;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(-127%);
+    width: 16%;
+
+    @include width1440 {
+        transform: translateX(-22%);
+        width: 309px;
+    }
+
+    @include width1024 {
+        transform: translateX(-13%);
+    }
+
+    @include width425 {
+        height: 81vh;
+    }
+}
+
+.sidemenu-hidden {
+    transform: translateX(-250%);
+    transition: ease-in-out 0.5s;
+}

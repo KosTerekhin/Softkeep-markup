@@ -1,0 +1,90 @@
+// MAIN BUTTON STYLE
+.btn {
+    font-weight: 600;
+    font-size: rem(16px);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 !important;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+// CUSTOM BUTTON STYLES
+// ---header buttons----
+.search-button {
+    width: 95px;
+    height: 40px;
+    border-radius: 20px !important;
+
+    @include width425 {
+        width: 40px;
+    }
+}
+
+.share-button {
+    width: 52px;
+    height: 65%;
+    border-radius: 50% !important;
+
+    > img {
+        width: 51%;
+        filter: var(--svg-white-color);
+    }
+}
+// ------body buttons-------
+.body-button {
+    width: 167px;
+    height: 46px;
+
+    border-radius: 30px !important;
+    border: 1px solid var(--text-main-dark);
+
+    > p {
+        text-transform: uppercase !important;
+        font-size: 12px;
+    }
+}
+
+.advise-button {
+    text-transform: uppercase;
+    text-decoration: underline !important;
+
+    color: var(--main-white);
+    background-color: transparent;
+
+    font-family: var(--myriad);
+    font-size: 400;
+    font-size: 20px;
+
+    margin-bottom: 2px;
+
+    &:hover {
+        color: var(--header-green) !important;
+        text-decoration: underline !important;
+    }
+}
+
+.subscribe-button {
+    width: 52px;
+    height: 65%;
+    border-radius: 50% !important;
+    text-transform: uppercase !important;
+
+    > p {
+        color: var(--text-main-dark) !important;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    > img {
+        width: 51%;
+        filter: var(--svg-white-color);
+    }
+
+    &:hover {
+        > p {
+            color: var(--header-green) !important;
+        }
+    }
+}

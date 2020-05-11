@@ -1,0 +1,17 @@
+center {
+    width: 100%;
+
+    position: relative;
+    background-color: var(--body-bg-gray);
+
+    padding-left: 20%;
+    padding-right: 4.25%;
+    padding-bottom: 47px;
+
+    @include width1440 {
+        padding-left: 4.25%;
+    }
+}
+
+@import "./top/topSection/topSection";
+@import "./top/bottom/centerBottom";

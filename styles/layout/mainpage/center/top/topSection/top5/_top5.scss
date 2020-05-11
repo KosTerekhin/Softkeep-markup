@@ -1,0 +1,58 @@
+.center--top5 {
+    width: 28.5%;
+
+    @include width1024 {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--main-white);
+
+    padding: 20px 35px 31px 45px;
+
+    > span {
+        > h2 {
+            text-align: left;
+            font-size: 36px;
+
+            margin-bottom: 11px;
+        }
+    }
+    // 5 items column
+    > div {
+        display: flex;
+        flex-direction: column;
+        // item row
+        > div {
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 0.5px solid var(--top-border-light-gray);
+
+            padding-bottom: 8px;
+            padding-top: 12px;
+
+            > img {
+                max-width: 25px;
+                max-height: 25px;
+                height: auto;
+                margin-right: 2px;
+            }
+
+            > a {
+                font-size: 18px;
+                margin-left: 10px;
+                white-space: wrap;
+                text-align: left;
+            }
+
+            &:nth-last-of-type(1) {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--button-black);
+
+    padding-left: 18.5%;
+    padding-right: 18.5%;
+    margin-top: 3.5%;
+
+    @include width1440 {
+        padding-right: 4.25%;
+        padding-left: 4.25%;
+    }
+
+    p {
+        font-family: var(--poppins);
+        font-weight: 400;
+        color: var(--top-border-light-gray);
+        font-size: 14px;
+    }
+
+    a {
+        color: var(--footer-text-gray) !important;
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+
+        margin-bottom: 14px;
+
+        &:hover {
+            color: var(--header-green) !important;
+        }
+    }
+
+    h5 {
+        font-family: var(--poppins);
+        font-weight: 600;
+        font-size: 17px;
+    }
+}
+
+@import "./top/top";
+@import "./bottom/bottom";

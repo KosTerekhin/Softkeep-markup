@@ -1,0 +1,9 @@
+.footer-bottom {
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+
+    > p {
+        color: var(--footer-text-gray);
+    }
+}
