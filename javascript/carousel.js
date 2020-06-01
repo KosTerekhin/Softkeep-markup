@@ -96,7 +96,7 @@ owl1.owlCarousel({
 		899: {
 			items: 3
 		},
-		1250: {
+		1350: {
 			items: 5
 		},
 		1441: {
@@ -131,7 +131,7 @@ owl.owlCarousel({
 		899: {
 			items: 3
 		},
-		1250: {
+		1350: {
 			items: 5
 		},
 		1441: {
@@ -166,7 +166,7 @@ owl.owlCarousel({
 		899: {
 			items: 3
 		},
-		1250: {
+		1350: {
 			items: 5
 		},
 		1441: {
@@ -201,7 +201,7 @@ owl.owlCarousel({
 		899: {
 			items: 3
 		},
-		1250: {
+		1350: {
 			items: 5
 		},
 		1441: {

@@ -1871,9 +1871,14 @@ bottom {
   margin-top: 11px;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1800px) {
   bottom {
     padding-right: 4.25%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  bottom {
     padding-left: 4.25%;
   }
 }

@@ -9,8 +9,11 @@ bottom {
     padding-bottom: 1%;
     margin-top: 11px;
 
-    @include width1440 {
+    @include width1800 {
         padding-right: 4.25%;
+    }
+
+    @include width1440 {
         padding-left: 4.25%;
     }
 }
