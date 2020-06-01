@@ -37,3 +37,19 @@
     background-color: transparent;
     text-transform: capitalize !important;
 }
+
+// ------RADIO BUTTONS
+
+.white-label {
+    color: var(--text-main-dark);
+    background-color: var(--main-white);
+
+    p {
+        font-family: var(--poppins);
+        font-weight: 600;
+    }
+
+    &:hover {
+        color: var(--header-green) !important;
+    }
+}

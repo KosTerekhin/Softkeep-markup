@@ -55,6 +55,20 @@
     }
 }
 
+.header-fixed-height {
+    height: 87vh;
+    transform: translateX(0%);
+    top: 80px;
+
+    @include width1440 {
+        width: 309px;
+    }
+
+    @include width1024 {
+        top: 160px;
+    }
+}
+
 .sidemenu-hidden {
     transform: translateX(-250%);
     transition: ease-in-out 0.5s;

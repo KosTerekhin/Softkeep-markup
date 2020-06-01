@@ -1,0 +1,24 @@
+.recodepage--carousel {
+    > div {
+        padding: 31px 6% 50px 3%;
+
+        @include width1440 {
+            padding: 31px 3% 10% 3%;
+        }
+
+        @include width1024 {
+            padding: 31px 2.5% 10% 2.5%;
+            width: 95%;
+            margin: auto;
+        }
+    }
+
+    > h1 {
+        letter-spacing: 2px;
+        margin-top: 90px;
+
+        @include width1440 {
+            padding-right: 2.5%;
+        }
+    }
+}

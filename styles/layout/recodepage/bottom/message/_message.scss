@@ -1,0 +1,50 @@
+.recodepage--message {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    > div {
+        display: flex;
+        &:nth-of-type(1) {
+            flex-direction: row;
+            margin-bottom: 12px;
+
+            > img {
+                margin-right: 20px;
+            }
+
+            > div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                > p {
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    margin-top: 5px;
+                }
+
+                > .star-rating {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        &:nth-last-of-type(1) {
+            max-width: 70%;
+
+            @include width1440 {
+                min-width: 95%;
+            }
+            @include width1024 {
+                margin: auto;
+            }
+
+            > p {
+                font-family: var(--myriad);
+                font-weight: 600;
+                font-size: 17px;
+            }
+        }
+    }
+}

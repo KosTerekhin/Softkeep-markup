@@ -1,0 +1,54 @@
+.custom-scroll {
+    overflow-x: scroll;
+    // CUSTOM SCROLL
+    &::-webkit-scrollbar {
+        margin-right: 20px;
+        height: 30px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        box-sizing: border-box;
+        background: var(--top-border-light-gray);
+        border: 8px solid var(--main-white);
+        border-radius: 15px;
+        height: 15px;
+    }
+
+    /* Turn on single button up on top, and down on bottom */
+    &::-webkit-scrollbar-button:start:decrement,
+    &::-webkit-scrollbar-button:end:increment {
+        display: block;
+    }
+
+    /* Turn off the down area up on top, and up area on bottom */
+    &::-webkit-scrollbar-button:start:increment,
+    &::-webkit-scrollbar-button:end:decrement {
+        display: none;
+    }
+
+    /* Place The scroll down button at the bottom */
+    &::-webkit-scrollbar-button:end:increment {
+        background-image: url(/styles/images/left-arrow-downlaod.png);
+        background-position: center;
+        background-repeat: no-repeat !important;
+    }
+
+    /* Place The scroll up button at the up */
+    &::-webkit-scrollbar-button:start:decrement {
+        background-image: url(/styles/images/right-arrow-download.png);
+        background-position: center;
+        background-repeat: no-repeat !important;
+    }
+}
+
+.scroll-768 {
+    overflow: unset !important;
+
+    @include width768 {
+        overflow-x: scroll !important;
+    }
+}

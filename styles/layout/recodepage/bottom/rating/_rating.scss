@@ -1,0 +1,28 @@
+.recodepage--rating {
+    width: 22%;
+    margin-top: 20px;
+
+    @include width1440 {
+        width: 95%;
+    }
+
+    @include width768 {
+        margin: auto;
+    }
+
+    > p {
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    > .star-rating {
+        margin-bottom: 26px;
+
+        > div {
+            height: 26px;
+            width: 26px;
+            margin-right: 10.3px;
+        }
+    }
+}

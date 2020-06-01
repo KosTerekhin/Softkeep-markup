@@ -1,95 +1,97 @@
-.language--select{
+.language--select {
     margin-left: 57px;
     margin-right: 3.5%;
 
-    @include width425{
+    @include width425 {
         margin-left: 50px;
     }
-}
 
-.dropdown {
-    >button {
-        margin: 0 !important;
-        position: relative;
-    
-        display: flex;
-        align-items: center;
+    > .dropdown {
+        > button {
+            margin: 0 !important;
+            position: relative;
 
-        font-weight: 600;
-        font-size: 1rem;
-        
-        &::before {
-            display: inline-block;
-            content: url(/styles/images/001-russia.svg);
-            width: 36px;
-            height: 36px;
+            display: flex;
+            align-items: center;
 
-            position: absolute;
-            right: 46px;
+            font-weight: 600;
+            font-size: 1rem;
+
+            &::before {
+                display: inline-block;
+                content: url(/styles/images/001-russia.svg);
+                width: 36px;
+                height: 36px;
+
+                position: absolute;
+                right: 46px;
+            }
+        }
+
+        > .dropdown-menu {
+            transform: none !important;
+            top: 158% !important;
+            left: -223% !important;
+            background-color: var(--main-white);
+            color: var(--text-main-dark);
+            float: right;
+            padding: 0.45rem 0 !important;
+            width: auto !important;
+            min-width: 8rem !important;
+            height: auto;
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                i {
+                    color: var(--text-main-dark);
+                    transform: scale(0.7, 0.6);
+                    padding-left: 9px;
+                    opacity: 0;
+                }
+
+                .language-active {
+                    opacity: 1 !important;
+                }
+
+                a {
+                    color: var(--text-main-dark);
+                    padding: 0;
+                    text-align: left;
+                    padding-left: 7px;
+                    padding-right: 15px;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    line-height: 1.75rem;
+
+                    &:hover {
+                        background-color: var(--main-white);
+                        color: rgb(66, 66, 66);
+                    }
+                }
+            }
+
+            > .arrow-up {
+                position: absolute;
+                top: -17%;
+                left: 69%;
+                width: 22px;
+                height: 22px;
+                background-color: var(--main-white);
+                transform: rotate(45deg);
+                z-index: -1;
+                border-top: 1px solid rgba(0, 0, 0, 0.15);
+                border-left: 1px solid rgba(0, 0, 0, 0.15);
+            }
         }
     }
 }
 
-
-.dropdown-menu {
-    transform: none !important;
-    top: 158% !important;
-    left: -223% !important;
-    background-color: var(--main-white);
-    color: var(--text-main-dark);
-    float: right;
-    padding: 0.45rem 0 !important;;
-    width: auto !important;;
-    min-width: 8rem !important;
-    height: auto;
-
-    div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        i {
-            color: var(--text-main-dark);
-            transform: scale(0.7, 0.6);
-            padding-left: 9px;
-            opacity: 0;;
-        }
-
-        .language-active {
-            opacity: 1 !important;
-        }
-
-        a {
-            color: var(--text-main-dark); 
-            padding: 0;
-            text-align: left;
-            padding-left: 7px;
-            padding-right: 15px;
-            font-weight: 600;
-            font-size: 1rem;
-            line-height: 1.75rem;
-
-            &:hover {
-                background-color: var(--main-white);
-                color: rgb(66, 66, 66);
-            }
-        }
-    }   
-   
-}
-
-.arrow-up {
-    position: absolute;
-    top: -13%;
-    left: 69%;
-    width: 22px; 
-    height: 22px; 
-    background-color: var(--main-white);
-    transform: rotate(45deg);
-    z-index: -1;
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
     background-color: var(--text-main-dark);
     color: lightgray;
 }

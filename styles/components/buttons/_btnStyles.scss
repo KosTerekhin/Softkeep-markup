@@ -24,8 +24,14 @@
 
 .share-button {
     width: 52px;
-    height: 65%;
+    height: 100%;
     border-radius: 50% !important;
+
+    &:hover {
+        > img {
+            filter: var(--svg-black-color);
+        }
+    }
 
     > img {
         width: 51%;
@@ -85,6 +91,105 @@
     &:hover {
         > p {
             color: var(--header-green) !important;
+        }
+    }
+}
+
+// RADIO BUTTONS
+
+.body-radio-button {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px !important;
+    border: 1px solid var(--text-main-dark);
+
+    p {
+        text-transform: uppercase !important;
+        font-size: 12px;
+    }
+}
+
+.radio-fixed-width {
+    max-width: 167px;
+    width: 167px;
+}
+
+.radio-flex-width {
+    max-width: 31%;
+    width: 31%;
+
+    @include width1440 {
+        max-width: 45%;
+        width: 45%;
+    }
+
+    @include width425 {
+        max-width: 95%;
+        width: 95%;
+        margin-left: 2.5% !important;
+    }
+
+    @include width375 {
+        margin-left: 0% !important;
+    }
+}
+
+.radio-recode-width {
+    max-width: 11%;
+    width: auto;
+    margin-top: 20px;
+
+    @include width1440 {
+        max-width: 18%;
+        width: 18%;
+    }
+    @include width1024 {
+        max-width: 45%;
+        width: 45%;
+    }
+
+    @include width425 {
+        max-width: 95%;
+        width: 95%;
+        margin-left: 2.5% !important;
+    }
+
+    @include width375 {
+        margin-left: 0% !important;
+    }
+}
+
+.feedback-width {
+    min-width: 100%;
+
+    @include width1024 {
+        max-width: 95%;
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.radio-bigger-font {
+    font-size: 15px !important;
+    font-weight: normal !important;
+}
+
+// ----JOINED RADIO BUTTONS
+.btn-connected {
+    > label {
+        border-radius: 0 !important;
+
+        &:nth-of-type(1) {
+            border-top-left-radius: 30px !important;
+            border-bottom-left-radius: 30px !important;
+        }
+
+        &:nth-last-of-type(1) {
+            border-top-right-radius: 30px !important;
+            border-bottom-right-radius: 30px !important;
         }
     }
 }

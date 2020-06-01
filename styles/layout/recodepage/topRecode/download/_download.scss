@@ -1,0 +1,34 @@
+.recodepage--download {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.download-scroll {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 15px;
+
+    // IMAGES
+    > div {
+        min-width: 23.5%;
+        margin-right: 2%;
+
+        @include width1024 {
+            min-width: 31.5%;
+        }
+
+        @include width768 {
+            min-width: 48.5%;
+        }
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+
+        > img {
+            width: 100%;
+        }
+    }
+}

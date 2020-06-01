@@ -1,0 +1,17 @@
+.description-text {
+    @include width1024 {
+        width: 95%;
+        margin: auto;
+    }
+
+    > p {
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 39px;
+        padding-bottom: 40px;
+
+        &:nth-last-of-type(1) {
+            padding-bottom: 0;
+        }
+    }
+}

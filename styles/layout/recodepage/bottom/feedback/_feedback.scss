@@ -1,0 +1,35 @@
+.recodepage--feedback {
+    width: 53%;
+    margin-top: 20px;
+
+    @include width1440 {
+        width: 95%;
+    }
+
+    @include width768 {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    > label {
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    > .input-group {
+        height: 43px;
+        margin-bottom: 22px;
+
+        > input {
+            border-radius: 0 !important;
+            border: none !important;
+        }
+    }
+}
+
+.form-control {
+    &:focus {
+        border-color: var(--main-black);
+        box-shadow: none !important;
+    }
+}

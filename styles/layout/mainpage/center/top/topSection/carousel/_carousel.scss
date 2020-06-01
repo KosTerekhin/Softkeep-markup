@@ -43,6 +43,10 @@
         @include width425 {
             font-size: 41px;
         }
+        > span {
+            font-family: var(--myriad);
+            font-weight: 300;
+        }
     }
 
     &:after {

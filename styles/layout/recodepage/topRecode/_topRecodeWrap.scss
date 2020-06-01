@@ -1,0 +1,27 @@
+.recodepage-top {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.recodepage-top-inner {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 8px 0 13px 16.8%;
+
+    @include width1440 {
+        padding: 8px 0 13px 315px;
+    }
+
+    @include width1024 {
+        padding: 8px 0 13px 2.5%;
+        width: 95%;
+    }
+}
+
+@import "./info/info";
+@import "./convert/convert";
+@import "./download/download";

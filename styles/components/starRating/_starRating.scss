@@ -1,0 +1,23 @@
+.star-rating {
+    display: flex;
+    justify-content: flex-start;
+
+    > div {
+        height: 20px;
+        width: 20px;
+        margin-right: 6.3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        > img {
+            max-width: 100%;
+            filter: var(--svg-gray-color);
+        }
+
+        > .active {
+            filter: var(--svg-golden-color);
+        }
+    }
+}

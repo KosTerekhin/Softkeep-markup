@@ -1,0 +1,43 @@
+.audiopage--navigation {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 0 13px 16.8%;
+
+    @include width1440 {
+        padding: 8px 0 13px 315px;
+    }
+
+    @include width1024 {
+        padding: 8px 0 13px 2.5%;
+        width: 95%;
+    }
+
+    > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--header-green);
+        margin-right: 5px;
+
+        &:nth-last-of-type(1) {
+            margin: 0;
+        }
+
+        > p {
+            color: var(--main-white);
+            padding: 0px 10px 0px 8px;
+
+            @include width425 {
+                text-align: center;
+                padding: 0px 5px 0px 5px;
+            }
+        }
+
+        &:hover {
+            > p {
+                color: var(--main-black);
+            }
+        }
+    }
+}
