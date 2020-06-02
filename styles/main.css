@@ -119,6 +119,38 @@ p {
   color: var(--header-green) !important;
 }
 
+.nav-pills > li:nth-of-type(1) {
+  margin-bottom: 23px;
+}
+
+.nav-pills > li:nth-of-type(2) {
+  margin-left: 10px !important;
+  margin-bottom: 39px;
+}
+
+@media only screen and (max-width: 375px) {
+  .nav-pills > li:nth-of-type(2) {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+}
+
+.nav-pills > .nav-item > a {
+  text-transform: uppercase;
+  font-family: var(--myriad);
+  font-size: 500;
+  font-size: 12px;
+}
+
+.nav-pills > .nav-item > .active {
+  color: var(--main-white);
+  background-color: var(--text-main-dark);
+}
+
+.nav-pills > .nav-item > .active:hover {
+  color: var(--header-green) !important;
+}
+
 .btn {
   font-weight: 600;
   font-size: 1rem;
@@ -373,7 +405,13 @@ p {
 }
 
 .carousel-custom-nav .owl-nav button:focus {
-  outline: 2px auto #000000 !important;
+  outline: 1px solid #000000 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-custom-nav .owl-nav button:focus {
+    outline: none !important;
+  }
 }
 
 .carousel-custom-nav .owl-nav button span {
@@ -393,6 +431,10 @@ p {
   width: 97%;
   right: 1.5%;
   bottom: 50%;
+}
+
+.carousel-arrows-inside .owl-nav:focus {
+  outline: none !important;
 }
 
 @media only screen and (max-width: 425px) {
@@ -1220,13 +1262,14 @@ header {
 
 .dropdown-menu-catalog .card-body > div a {
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px !important;
-  line-height: 16px !important;
   text-align: end;
-  margin-right: 8px !important;
   text-decoration: none;
+  white-space: nowrap;
+  font-weight: 500;
+  line-height: 16px !important;
+  font-size: 16px !important;
   color: var(--text-main-dark);
+  margin-right: 8px !important;
 }
 
 .dropdown-menu-catalog .card-body > div a:hover {
@@ -1883,6 +1926,21 @@ bottom {
   }
 }
 
+.tab-content {
+  max-width: 100%;
+  width: 100%;
+}
+
+.table-pane {
+  max-width: 100%;
+  width: 100%;
+}
+
+.table-pane > .carousel-body-wrap {
+  max-width: 100%;
+  width: 100%;
+}
+
 advise {
   width: 100%;
   display: -webkit-box;
@@ -1896,6 +1954,13 @@ advise {
   padding-left: 16.8%;
   padding-right: 16.8%;
   padding-bottom: 47px;
+}
+
+@media only screen and (max-width: 1800px) {
+  advise {
+    padding-left: 19.8%;
+    padding-right: 8.8%;
+  }
 }
 
 @media only screen and (max-width: 1440px) {

@@ -23,3 +23,6 @@ $(window).scroll(function() {
 $('#scroll-top').click(function() {
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 });
+
+var w = window.innerWidth;
+w < 1441 && sideMenu.classList.add('sidemenu-hidden');

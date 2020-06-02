@@ -108,6 +108,79 @@ owl1.owlCarousel({
 	}
 });
 
+// DOUBLE CAROUSEL / main page / tabs
+$(document).ready(function() {
+	$('#body-doublecarousel-1').owlCarousel();
+});
+
+var owl1 = $('#body-doublecarousel-1');
+owl1.owlCarousel({
+	items: 5,
+	margin: 0,
+	loop: true,
+	dots: false,
+	nav: true,
+	mouseDrag: true,
+	touchDrag: true,
+
+	responsive: {
+		0: {
+			items: 1
+		},
+		767: {
+			items: 2
+		},
+		899: {
+			items: 3
+		},
+		1350: {
+			items: 5
+		},
+		1441: {
+			items: 4
+		},
+		1800: {
+			items: 5
+		}
+	}
+});
+$(document).ready(function() {
+	$('#body-doublecarousel-2').owlCarousel();
+});
+
+var owl1 = $('#body-doublecarousel-2');
+owl1.owlCarousel({
+	items: 5,
+	margin: 0,
+	loop: true,
+	dots: false,
+	nav: true,
+	mouseDrag: true,
+	touchDrag: true,
+
+	responsive: {
+		0: {
+			items: 1
+		},
+		767: {
+			items: 2
+		},
+		899: {
+			items: 3
+		},
+		1350: {
+			items: 5
+		},
+		1441: {
+			items: 4
+		},
+		1800: {
+			items: 5
+		}
+	}
+});
+
+// SINGLE / main page
 $(document).ready(function() {
 	$('#body-carousel-2').owlCarousel();
 });

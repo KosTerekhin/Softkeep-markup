@@ -34,7 +34,11 @@
             }
 
             &:focus {
-                outline: 2px auto #000000 !important;
+                outline: 1px solid #000000 !important;
+
+                @include width768 {
+                    outline: none !important;
+                }
             }
 
             span {
@@ -54,6 +58,10 @@
         width: 97%;
         right: 1.5%;
         bottom: 50%;
+
+        &:focus {
+            outline: none !important;
+        }
 
         @include width425 {
             width: 100%;
