@@ -1,0 +1,79 @@
+.fragment {
+    display: flex;
+    justify-content: center;
+
+    @include width425 {
+        align-items: center;
+    }
+
+    > label {
+        &:nth-of-type(1) {
+            margin-bottom: 23px;
+        }
+
+        &:nth-of-type(2) {
+            margin-left: 10px !important;
+            margin-bottom: 39px;
+
+            @include width375 {
+                margin-left: 0 !important;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    > .active {
+        color: var(--main-white);
+        background-color: var(--text-main-dark);
+
+        p {
+            font-family: var(--myriad);
+            font-size: 400;
+        }
+
+        &:hover {
+            color: var(--header-green) !important;
+        }
+    }
+
+    > .focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    @include width375 {
+        flex-direction: column;
+    }
+}
+
+.media-block {
+    > div {
+        &:nth-of-type(1) {
+            // BUTTONS
+            > fragment {
+                display: flex;
+                justify-content: center;
+
+                > button {
+                    &:nth-of-type(1) {
+                        margin-bottom: 23px;
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-left: 10px;
+                        margin-bottom: 39px;
+
+                        @include width375 {
+                            margin-left: 0;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+
+                @include width375 {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

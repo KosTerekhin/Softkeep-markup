@@ -3,12 +3,12 @@
     width: 91.3%;
 
     @include width1440 {
-        padding: 8px 0 13px 315px;
+        padding: 8px 0 13px 4.25%;
+        width: 95%;
     }
 
     @include width1024 {
         padding: 8px 0 13px 2.5%;
-        width: 95%;
     }
 
     > div {

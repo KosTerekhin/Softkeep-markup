@@ -333,9 +333,18 @@ p {
   min-width: 100%;
 }
 
+@media only screen and (max-width: 1440px) {
+  .feedback-width {
+    max-width: 60%;
+    min-width: 60%;
+    width: 60%;
+    margin: auto;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .feedback-width {
-    max-width: 95%;
+    min-width: 95%;
     width: 95%;
     margin: auto;
   }
@@ -668,37 +677,16 @@ p {
   margin-left: 35px;
 }
 
-.media-block > div:nth-of-type(1) > fragment {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.media-block > div:nth-of-type(1) > fragment > button:nth-of-type(1) {
-  margin-bottom: 23px;
-}
-
-.media-block > div:nth-of-type(1) > fragment > button:nth-of-type(2) {
-  margin-left: 10px;
-  margin-bottom: 39px;
-}
-
-@media only screen and (max-width: 375px) {
-  .media-block > div:nth-of-type(1) > fragment > button:nth-of-type(2) {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .media-block > div:nth-of-type(1) > fragment {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+@media only screen and (max-width: 1800px) {
+  .carousel-body-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 92%;
+    margin: auto;
   }
 }
 
@@ -709,6 +697,14 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .fragment {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .fragment > label:nth-of-type(1) {
@@ -756,16 +752,37 @@ p {
   }
 }
 
-@media only screen and (max-width: 1800px) {
-  .carousel-body-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 92%;
-    margin: auto;
+.media-block > div:nth-of-type(1) > fragment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.media-block > div:nth-of-type(1) > fragment > button:nth-of-type(1) {
+  margin-bottom: 23px;
+}
+
+.media-block > div:nth-of-type(1) > fragment > button:nth-of-type(2) {
+  margin-left: 10px;
+  margin-bottom: 39px;
+}
+
+@media only screen and (max-width: 375px) {
+  .media-block > div:nth-of-type(1) > fragment > button:nth-of-type(2) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .media-block > div:nth-of-type(1) > fragment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -868,7 +885,7 @@ p {
 
 @media only screen and (max-width: 1440px) {
   .landing-image {
-    padding-left: 315px !important;
+    padding-left: 4.25% !important;
   }
 }
 
@@ -2147,7 +2164,7 @@ advise {
 
 @media only screen and (max-width: 1440px) {
   .audiopage--navigation {
-    padding: 8px 0 13px 315px;
+    padding: 8px 0 13px 4.25%;
   }
 }
 
@@ -2199,14 +2216,14 @@ advise {
 
 @media only screen and (max-width: 1440px) {
   .audiopage--filter {
-    padding: 8px 0 13px 315px;
+    padding: 8px 0 13px 4.25%;
+    width: 95%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .audiopage--filter {
     padding: 8px 0 13px 2.5%;
-    width: 95%;
   }
 }
 
@@ -2264,7 +2281,7 @@ advise {
 
 @media only screen and (max-width: 1440px) {
   .audiopage-carousels {
-    padding: 0 3% 10% 310px;
+    padding: 8px 0 13px 4.25%;
   }
 }
 
@@ -2283,14 +2300,14 @@ advise {
 
 @media only screen and (max-width: 1440px) {
   .mediapage--filter {
-    padding: 8px 0 13px 315px;
+    padding: 8px 0 13px 4.25%;
+    width: 95%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .mediapage--filter {
     padding: 8px 0 13px 2.5%;
-    width: 95%;
   }
 }
 
@@ -2343,7 +2360,7 @@ advise {
 }
 
 .mediapage-items {
-  padding: 0 7.1% 10% 16.8%;
+  padding: 0 7.1% 22px 16.8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2360,7 +2377,7 @@ advise {
 
 @media only screen and (max-width: 1440px) {
   .mediapage-items {
-    padding: 0 3% 10% 310px;
+    padding: 8px 4.25% 22px 4.25%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -2368,14 +2385,40 @@ advise {
 
 @media only screen and (max-width: 1024px) {
   .mediapage-items {
-    padding: 0 2.5% 10% 2.5%;
-    width: 95%;
+    padding: 0 0% 22px 0%;
     margin: auto;
+    width: 95%;
   }
 }
 
 .mediapage-items > .media-element {
   margin-bottom: 18px;
+}
+
+.mediapage-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 7.1% 22px 16.8%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .mediapage-pagination {
+    padding: 8px 4.25% 22px 4.25%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mediapage-pagination {
+    padding: 0 0 22px 0;
+    margin: auto;
+    width: 95%;
+  }
 }
 
 .mediapage-pagination > nav > ul {
@@ -2498,7 +2541,7 @@ advise {
 
 @media only screen and (max-width: 1440px) {
   .recodepage-top-inner {
-    padding: 8px 0 13px 315px;
+    padding: 8px 0 13px 4.25%;
   }
 }
 
@@ -2662,7 +2705,7 @@ advise {
 
 @media only screen and (max-width: 1440px) {
   .recodepage-description {
-    padding: 8px 0 13px 315px;
+    padding: 8px 0 13px 4.25%;
   }
 }
 
@@ -2713,6 +2756,7 @@ advise {
     margin-right: 0.5%;
     margin-top: 20px !important;
     margin-bottom: 0 !important;
+    margin-left: 0 !important;
   }
   .description-radio > label:nth-last-of-type(1) {
     margin-right: 0;
@@ -2736,7 +2780,7 @@ advise {
 
 @media only screen and (max-width: 1440px) {
   .recodepage-techinfo {
-    padding: 34px 2% 13px 315px;
+    padding: 8px 0 13px 4.25%;
   }
 }
 
@@ -2858,7 +2902,7 @@ advise {
 
 @media only screen and (max-width: 1440px) {
   .recodepage-bottom {
-    padding: 8px 0 13px 315px;
+    padding: 8px 0 13px 4.25%;
   }
 }
 
@@ -2998,6 +3042,7 @@ advise {
 @media only screen and (max-width: 768px) {
   .recodepage--rating {
     margin: auto;
+    margin-top: 20px;
   }
 }
 

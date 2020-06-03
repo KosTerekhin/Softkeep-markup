@@ -1,6 +1,5 @@
 .media-block {
     width: 100%;
-    // margin-top: 56px;
 
     > div {
         // BLOCK NAME and BUTTONS
@@ -38,77 +37,7 @@
                     }
                 }
             }
-
-            // BUTTONS
-            > fragment {
-                display: flex;
-                justify-content: center;
-
-                > button {
-                    &:nth-of-type(1) {
-                        margin-bottom: 23px;
-                    }
-
-                    &:nth-of-type(2) {
-                        margin-left: 10px;
-                        margin-bottom: 39px;
-
-                        @include width375 {
-                            margin-left: 0;
-                            margin-top: 10px;
-                        }
-                    }
-                }
-
-                @include width375 {
-                    flex-direction: column;
-                }
-            }
         }
-    }
-}
-
-.fragment {
-    display: flex;
-    justify-content: center;
-
-    > label {
-        &:nth-of-type(1) {
-            margin-bottom: 23px;
-        }
-
-        &:nth-of-type(2) {
-            margin-left: 10px !important;
-            margin-bottom: 39px;
-
-            @include width375 {
-                margin-left: 0 !important;
-                margin-top: 10px;
-            }
-        }
-    }
-
-    > .active {
-        color: var(--main-white);
-        background-color: var(--text-main-dark);
-
-        p {
-            font-family: var(--myriad);
-            font-size: 400;
-        }
-
-        &:hover {
-            color: var(--header-green) !important;
-        }
-    }
-
-    > .focus {
-        outline: none !important;
-        box-shadow: none !important;
-    }
-
-    @include width375 {
-        flex-direction: column;
     }
 }
 

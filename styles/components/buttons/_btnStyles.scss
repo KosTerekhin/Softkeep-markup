@@ -165,8 +165,15 @@
 .feedback-width {
     min-width: 100%;
 
+    @include width1440 {
+        max-width: 60%;
+        min-width: 60%;
+        width: 60%;
+        margin: auto;
+    }
+
     @include width1024 {
-        max-width: 95%;
+        min-width: 95%;
         width: 95%;
         margin: auto;
     }
