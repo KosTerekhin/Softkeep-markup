@@ -38,8 +38,19 @@
     display: flex;
     flex-direction: column;
 
-    transform: translateX(-127%);
-    width: 16%;
+    // ---------NEW
+    transform: translateX(-68%);
+    width: 18%;
+    @include width1800 {
+        transform: translateX(-40%);
+    }
+
+    @include width425 {
+        transform: translateX(-5%);
+    }
+    // ---------OLD
+    // transform: translateX(-127%);
+    // width: 16%;
 
     @include width1440 {
         transform: translateX(-22%);
@@ -52,6 +63,8 @@
 
     @include width425 {
         height: 81vh;
+        // ---------NEW
+        transform: translateX(-5%);
     }
 }
 

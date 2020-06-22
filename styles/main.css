@@ -1245,9 +1245,23 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transform: translateX(-127%);
-          transform: translateX(-127%);
-  width: 16%;
+  -webkit-transform: translateX(-68%);
+          transform: translateX(-68%);
+  width: 18%;
+}
+
+@media only screen and (max-width: 1800px) {
+  .header-sidemenu {
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .header-sidemenu {
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -1268,6 +1282,8 @@ header {
 @media only screen and (max-width: 425px) {
   .header-sidemenu {
     height: 81vh;
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
   }
 }
 
