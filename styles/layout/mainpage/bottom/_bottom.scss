@@ -4,18 +4,24 @@ bottom {
     flex-direction: column;
     background-color: var(--main-white);
 
-    padding-left: 18.5%;
-    padding-right: 18.5%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
     padding-bottom: 1%;
     margin-top: 11px;
 
     @include width1800 {
         padding-right: 4.25%;
+        padding-left: 7.25%;
     }
 
     @include width1440 {
         padding-left: 4.25%;
     }
+    // ---------OLD
+    // padding-left: 18.5%;
+    // padding-right: 18.5%;
+    // padding-bottom: 1%;
+    // margin-top: 11px;
 }
 
 @import "./tabs/wrap";

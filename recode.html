@@ -402,40 +402,73 @@
     </div>
     <!-- DESCRIPTION -->
     <div class="recodepage-description">
-        <!-- radio buttons -->
-        <div class="btn-group btn-group-toggle btn-connected fragment description-radio" data-toggle="buttons">
-            <label class="btn body-radio-button radio-recode-width white-label active">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked> 
-              <p class="radio-bigger-font"> описание </p> 
-            </label>
-            <label class="btn body-radio-button radio-recode-width white-label">
-              <input type="radio" name="options" id="option2" autocomplete="off"> 
-              <p class="radio-bigger-font">скачать</p> 
-            </label>
-            <label class="btn body-radio-button radio-recode-width white-label">
-              <input type="radio" name="options" id="option2" autocomplete="off"> 
-              <p class="radio-bigger-font"> возможности</p> 
-            </label>
-            <label class="btn body-radio-button radio-recode-width white-label">
-              <input type="radio" name="options" id="option2" autocomplete="off"> 
-              <p class="radio-bigger-font">вопросы и ответы</p> 
-            </label>
-        </div>  
-        <!-- all the text -->
-        <div class="description-text">
-            <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
-            <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
-            <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
-            <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
-            <p> 
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu
-
-            </p>
-            <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
-
+      <!-- TAB BUTTONS -->
+        <ul class="nav nav-pills fragment-recode description-radio btn-connected" id="pills-tab" role="tablist">
+            <li class="nav-item radio-recode-width white-label body-radio-button">
+              <a class="clear-link radio-bigger-font active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">описание</a>
+            </li>
+            <li class="nav-item radio-recode-width white-label body-radio-button">
+              <a class="clear-link radio-bigger-font " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">скачать</a>
+            </li>
+            <li class="nav-item radio-recode-width white-label body-radio-button">
+              <a class="clear-link radio-bigger-font " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">возможности</a>
+            </li>
+            <li class="nav-item radio-recode-width white-label body-radio-button">
+              <a class="clear-link radio-bigger-font " id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">вопросы и ответы</a>
+            </li>
+        </ul>
+        <!-- TABS - CONTENT -->
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <!-- TAB#1             -->
+                <div class="description-text">
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p> 
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu
+        
+                    </p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+        
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- TAB#2 -->
+                <div class="description-text">
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+        
+                </div>          
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- TAB#3 -->
+                <div class="description-text">
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+        
+                </div>          
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- TAB#4  -->
+                <div class="description-text">
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+                    <p>            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, nostrum itaque mollitia voluptas cupiditate ab vitae. Adipisci, est dolor, delectus, ducimus iusto doloremque illum repudiandae hic veritatis nihil similique quibu</p>
+        
+                </div>          
+            </div>
+            
         </div>
+
     </div>
     <!-- TECH INFO -->
     <div class="recodepage-techinfo custom-scroll scroll-768 bg-body-white">

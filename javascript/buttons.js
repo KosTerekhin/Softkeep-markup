@@ -8,6 +8,9 @@ const sideMenu = document.querySelector('#sidemenu');
 menuButton.addEventListener('click', () => {
 	sideMenu.classList.toggle('sidemenu-hidden');
 });
+// sidemenu from 1441
+// var w = window.innerWidth;
+// w < 1441 && sideMenu.classList.add('sidemenu-hidden');
 
 // ------------------srcroll-up------------------
 const scroll = document.querySelector('#scroll-top');
@@ -23,6 +26,3 @@ $(window).scroll(function() {
 $('#scroll-top').click(function() {
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 });
-
-var w = window.innerWidth;
-w < 1441 && sideMenu.classList.add('sidemenu-hidden');

@@ -44,13 +44,18 @@
     color: var(--text-main-dark);
     background-color: var(--main-white);
 
-    p {
+    p,
+    a {
         font-family: var(--poppins);
         font-weight: 600;
     }
 
     &:hover {
         color: var(--header-green) !important;
+
+        > a {
+            color: var(--header-green) !important;
+        }
     }
 }
 
