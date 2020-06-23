@@ -1245,23 +1245,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transform: translateX(-68%);
-          transform: translateX(-68%);
-  width: 18%;
-}
-
-@media only screen and (max-width: 1800px) {
-  .header-sidemenu {
-    -webkit-transform: translateX(-40%);
-            transform: translateX(-40%);
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .header-sidemenu {
-    -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
-  }
+  -webkit-transform: translateX(-127%);
+          transform: translateX(-127%);
+  width: 16%;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -1282,13 +1268,11 @@ header {
 @media only screen and (max-width: 425px) {
   .header-sidemenu {
     height: 81vh;
-    -webkit-transform: translateX(-5%);
-            transform: translateX(-5%);
   }
 }
 
 .header-fixed-height {
-  height: 87vh;
+  height: 99%;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   top: 80px;
@@ -1300,9 +1284,22 @@ header {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
   .header-fixed-height {
     top: 160px;
+  }
+}
+
+.header-recode-height {
+  height: 99%;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  top: 0px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .header-recode-height {
+    width: 309px;
   }
 }
 
@@ -1868,16 +1865,9 @@ center {
   width: 100%;
   position: relative;
   background-color: var(--body-bg-gray);
-  padding-left: 12.5%;
-  padding-right: 12.5%;
-  padding-bottom: 1%;
-}
-
-@media only screen and (max-width: 1800px) {
-  center {
-    padding-right: 4.25%;
-    padding-left: 7.25%;
-  }
+  padding-left: 20%;
+  padding-right: 4.25%;
+  padding-bottom: 47px;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -2681,6 +2671,7 @@ advise {
 
 .recodepage-top {
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2856,7 +2847,7 @@ advise {
 }
 
 .recodepage-description {
-  padding: 8px 0 13px 16.8%;
+  padding: 8px 2% 13px 7.8%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2915,7 +2906,7 @@ advise {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 34px 44.5% 13px 14.8%;
+  padding: 34px 55.5% 13px 5.8%;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -3037,7 +3028,7 @@ advise {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 28px 0 55px 16.8%;
+  padding: 28px 2% 55px 7.8%;
 }
 
 @media only screen and (max-width: 1440px) {
