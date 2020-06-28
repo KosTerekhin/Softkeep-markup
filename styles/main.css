@@ -1064,13 +1064,70 @@ p {
 
 .star-rating > div > img {
   max-width: 100%;
-  -webkit-filter: var(--svg-gray-color);
-          filter: var(--svg-gray-color);
 }
 
-.star-rating > div > .active {
-  -webkit-filter: var(--svg-golden-color);
-          filter: var(--svg-golden-color);
+.mdb-rating .rate-popover {
+  color: #808080;
+}
+
+.mdb-rating .live {
+  color: #000;
+}
+
+.mdb-rating .oneStar {
+  color: #44370f;
+}
+
+.mdb-rating .twoStars {
+  color: #96781e;
+}
+
+.mdb-rating .threeStars {
+  color: #e2b52e;
+}
+
+.mdb-rating .fourStars {
+  color: #f1ba12;
+}
+
+.mdb-rating .fiveStars {
+  color: #f3cb06;
+}
+
+.mdb-rating .amber-text {
+  color: #ffc107;
+}
+
+.rate-popover {
+  color: #808080;
+}
+
+.live {
+  color: #000;
+}
+
+.oneStar {
+  color: #44370f;
+}
+
+.twoStars {
+  color: #96781e;
+}
+
+.threeStars {
+  color: #e2b52e;
+}
+
+.fourStars {
+  color: #f1ba12;
+}
+
+.fiveStars {
+  color: #f3cb06;
+}
+
+.amber-text {
+  color: #ffc107;
 }
 
 .custom-scroll {
@@ -2844,6 +2901,12 @@ advise {
 
 .download-scroll > div > img {
   width: 100%;
+  cursor: pointer;
+}
+
+.modal-body > img {
+  width: 100%;
+  height: 100%;
 }
 
 .recodepage-description {

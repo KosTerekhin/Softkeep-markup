@@ -26,3 +26,25 @@ $(window).scroll(function() {
 $('#scroll-top').click(function() {
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 });
+
+// ------------------Rating Initialization------------------
+$(document).ready(function() {
+	$('#rateMe1').mdbRate();
+});
+$(document).ready(function() {
+	$('#rateMe2').mdbRate();
+});
+$(document).ready(function() {
+	$('#rateMe3').mdbRate();
+});
+
+// ------------------MODAL IMAGES------------------
+
+modalImg = document.getElementById('modal-content');
+
+window.addEventListener('click', (e) => {
+	if (e.target.getAttribute('data-target') === '#modal-download') {
+		modalImg.setAttribute('src', e.target.getAttribute('src'));
+		console.log(e.target.getAttribute('src'));
+	}
+});

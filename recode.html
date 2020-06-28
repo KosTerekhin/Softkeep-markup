@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./javascript/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-
     <title>Softkeep</title>
 </head>
 <body class="bg-body-gray">
@@ -336,22 +335,8 @@
                     </div>
                     <div>
                         <p>5.0</p>
-                        <div class="star-rating">
-                            <div>
-                                <img src="/styles/images/star (5).svg" alt="star" class='active'>
-                            </div>
-                            <div>
-                                <img src="/styles/images/star (5).svg" alt="star" >
-                            </div>
-                            <div>
-                                <img src="/styles/images/star (5).svg" alt="star" >
-                            </div>
-                            <div>
-                                <img src="/styles/images/star (5).svg" alt="star" >
-                            </div>
-                            <div>
-                                <img src="/styles/images/star (5).svg" alt="star" >
-                            </div>
+                        <div class="star-rating-mdb">
+                            <span id="rateMe1"></span>
                         </div>
                         <a href="/" class='clear-link'>Оценить это приложение</a>
                     </div>
@@ -372,31 +357,46 @@
                     </label>
                 </div> 
                 <div class="download-scroll custom-scroll">
-                    <div>
-                        <img src="/styles/images/download.png" alt="download">
+                    <div >
+                        <img src="/styles/images/download.png" alt="download" data-toggle="modal" data-target="#modal-download">
+                        <div class="modal fade" id="modal-download" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="" alt="modal-img" id="modal-content">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                    <div>
-                        <img src="/styles/images/download.png" alt="download">
+                    <div >
+                        <img src="/styles/images/download.png" alt="download" data-toggle="modal" data-target="#modal-download">
                     </div>
-                    <div>
-                        <img src="/styles/images/download.png" alt="download">
+                    <div >
+                        <img src="/styles/images/download.png" alt="download" data-toggle="modal" data-target="#modal-download">
+
                     </div>
-                    <div>
-                        <img src="/styles/images/download.png" alt="download">
+                    <div >
+                        <img src="/styles/images/download.png" alt="download" data-toggle="modal" data-target="#modal-download">
+
                     </div>
-                    <div>
-                        <img src="/styles/images/download.png" alt="download">
+                    <div >
+                        <img src="/styles/images/download.png" alt="download" data-toggle="modal" data-target="#modal-download">
+
                     </div>
-                    <div>
-                        <img src="/styles/images/download.png" alt="download">
+                    <div >
+                        <img src="/styles/images/download.png" alt="download" data-toggle="modal" data-target="#modal-download">
+
                     </div>
-                    <div>
-                        <img src="/styles/images/download.png" alt="download">
-                    </div>
-                    <div>
-                        <img src="/styles/images/download.png" alt="download">
-                    </div>
+
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -500,22 +500,8 @@
             <div>
                 <img src="/styles/images/avatar.png" alt="avatar">
                 <div>
-                    <div class="star-rating">
-                        <div>
-                            <img src="/styles/images/star (5).svg" alt="star" class='active'>
-                        </div>
-                        <div>
-                            <img src="/styles/images/star (5).svg" alt="star" class='active'>
-                        </div>
-                        <div>
-                            <img src="/styles/images/star (5).svg" alt="star" class='active'>
-                        </div>
-                        <div>
-                            <img src="/styles/images/star (5).svg" alt="star" >
-                        </div>
-                        <div>
-                            <img src="/styles/images/star (5).svg" alt="star" >
-                        </div>
+                    <div class="star-rating-mdb">
+                        <span id="rateMe2"></span>
                     </div>
                     <p>Игорь Ватутин</p>
                 </div>
@@ -552,23 +538,8 @@
         <!-- RATING -->
         <div class="recodepage--rating">
             <p>ваш рейтинг</p>
-
-            <div class="star-rating">
-                <div>
-                    <img src="/styles/images/star (5).svg" alt="star" class='active'>
-                </div>
-                <div>
-                    <img src="/styles/images/star (5).svg" alt="star" class='active'>
-                </div>
-                <div>
-                    <img src="/styles/images/star (5).svg" alt="star" class='active'>
-                </div>
-                <div>
-                    <img src="/styles/images/star (5).svg" alt="star" >
-                </div>
-                <div>
-                    <img src="/styles/images/star (5).svg" alt="star" >
-                </div>
+            <div class="star-rating-mdb mb-3">
+                <span id="rateMe3"></span>
             </div>
 
             <div class="btn-group btn-group-toggle btn-connected fragment" data-toggle="buttons">
@@ -657,8 +628,6 @@
         </div>
     </div>
 
-
-
     <footer>
         <div class="footer-top">
             <div>
@@ -705,8 +674,11 @@
     <script src="https://kit.fontawesome.com/7e91eb521c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
     <script src="./javascript/owl.carousel.min.js"></script>
     <script src="./javascript/carousel.js"></script>
+    <script src="/js/addons/rating.min.js.map"></script>
+    <script src="/js/addons/rating.min.js"></script>
     <script src="./javascript/buttons.js"></script>
 </body>
 </html>

@@ -13,11 +13,28 @@
 
         > img {
             max-width: 100%;
-            filter: var(--svg-gray-color);
+            // filter: var(--svg-gray-color);
         }
 
-        > .active {
-            filter: var(--svg-golden-color);
+        // > .active {
+        //     filter: var(--svg-golden-color);
+        // }
+    }
+}
+
+.star-rating-mdb {
+    > span {
+        > i {
+            &::before {
+                // height: 20px;
+                // width: 20px;
+                // max-width: 100%;
+                // cursor: pointer;
+                // margin-right: 6.3px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+            }
         }
     }
 }
