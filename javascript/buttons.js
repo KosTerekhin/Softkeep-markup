@@ -45,6 +45,5 @@ modalImg = document.getElementById('modal-content');
 window.addEventListener('click', (e) => {
 	if (e.target.getAttribute('data-target') === '#modal-download') {
 		modalImg.setAttribute('src', e.target.getAttribute('src'));
-		console.log(e.target.getAttribute('src'));
 	}
 });
